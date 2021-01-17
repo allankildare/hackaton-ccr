@@ -1,0 +1,79 @@
+:root {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px 10px 20px;
+}
+
+.user div {
+    display: flex;
+    align-items: center;
+}
+
+.user div img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.user div p {
+    font-size: 1.9em;
+    font-weight: 500;
+    margin-left: 12px;
+}
+
+.user .fa-seedling {
+    color: #0ba138;
+}
+
+.user button {
+    border:none;
+    background-color: #e2e2e2;
+    padding: 5px 13px;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+section {
+    padding: 0 0 15px 10px;
+}
+
+section .cards {
+    display: flex;
+    overflow-x: scroll;
+}
+
+section .cards::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+section .cards::-webkit-scrollbar {
+    width: 8px;
+    background: #F4F4F4;
+}
+section .cards::-webkit-scrollbar-thumb {
+    background: #868686;
+    border-radius: 10px;
+}
+
+.card {
+    font-size: 2.4em;
+    min-height: 140px;
+    max-height: 140px;
+    min-width: 275px;
+    max-width: 275px;
+    color: #FFF;
+    background-color: #333;
+    border-radius: 5px;
+    padding: 10px 0 0 10px;
+    margin-right: 7px;
+}
