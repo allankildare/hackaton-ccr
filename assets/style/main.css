@@ -1,5 +1,11 @@
 :root {
-    font-size: 62.5%;
+    margin-top: 30px;
+}
+
+.container {
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px 10px 20px;
 }
 
 * {
@@ -8,6 +14,121 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
+
+.information{
+    position: absolute;
+    width:100%;
+    left: 0px;
+    top: 189px;
+
+    background: #446B5C;
+}
+.information .name {
+    position: relative;
+    left: 32px;
+    margin-top: 20px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 46px;
+
+    color: #FFFFFF;
+}
+
+.information .descricao {
+    position: relative;
+    left: 32px;
+    width: 80%;
+    margin-top: 20px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+
+    color: #ffffffc9;
+}
+.video{
+    position:  relative;
+    width: 298px;
+    height: 205px;
+    left: 32px;
+    margin-top: 20px;
+
+    background: #3C5F51;
+    border: 1px solid #B9B9B9;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+.entrar-grupo{
+    position: relative;
+    text-align: center;
+    align-items: center;
+    display: grid;
+    width: 298px;
+    height: 60px;
+    left: 18%;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;    
+
+    background: #446B5C;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.video .play{
+    position: absolute;
+    width :30px;
+    height :30px;
+    left: 133px;
+    right: 144px;
+    top: 88px;
+    padding-top: 6px;
+    padding-left: 8px;
+    bottom: 92px;
+    border-radius: 20px;
+    border: 1px solid #FFFFFF;
+}
+.fa-play{
+    color: #fff;
+}
+.title {
+    position: absolute;
+    left: 42px;
+    top: 158px;
+
+    line-height: 15px;
+
+    /* identical to box height */
+
+    color: #333333;
+}
+
+.sessoes {
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px 10px 10px;
+}
+
+.text-descrip {
+    width: 296px;
+    margin-bottom: 5px;
+    height: 15px;
+    left: 32px;
+    top: 158px;
+
+    
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+
+    /* identical to box height */
+
+    color: #333333;
+}
+
 .user {
     display: flex;
     justify-content: space-between;
@@ -20,15 +141,42 @@
     align-items: center;
 }
 
-.user div img {
+.user img {
     width: 50px;
     border-radius: 50%;
+    height: 36px;
+    left: 258px;
+    top: 53px;
+    border: none;
+
+    background: #E2E2E2;
+}
+
+.user .name {
+    display: flex;
+    font-weight: 500;
+    margin-left: 12px;
+    width: 119px;
+    height: 29px;
+    left: 75px;
+    top: 50px;
+}
+
+.user .name div i {
+    margin-left: 11px;
 }
 
 .user div p {
     font-size: 1.9em;
-    font-weight: 500;
-    margin-left: 12px;
+    margin-left: 11px;
+
+    
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 17px;
+
+    color: #333333;
 }
 
 .user .fa-seedling {
@@ -36,12 +184,14 @@
 }
 
 .user button {
-    border:none;
-    background-color: #e2e2e2;
-    padding: 5px 13px;
-    border-radius: 15px;
-    font-weight: 500;
-    font-size: 1.5em;
+    width: 96px;
+    height: 36px;
+    left: 258px;
+    top: 53px;
+    border: none;
+
+    background: #E2E2E2;
+    border-radius: 22px;
 }
 
 section {
@@ -66,14 +216,15 @@ section .cards::-webkit-scrollbar-thumb {
 }
 
 .card {
-    font-size: 2.4em;
     min-height: 140px;
     max-height: 140px;
     min-width: 275px;
     max-width: 275px;
     color: #FFF;
-    background-color: #333;
+    background-color:#446B5C;
     border-radius: 5px;
     padding: 10px 0 0 10px;
     margin-right: 7px;
+    font-size: 20px;
+    cursor:pointer;
 }
